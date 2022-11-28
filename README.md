@@ -1,6 +1,6 @@
 # Initialize Disks inside a Azure Windows VM using Terraform
 
-This is a simple terraform module to initialize and format disks in a Azure VM using a powershell/bash script deployed through a custom script extension
+This is a simple terraform module to initialize and format disks in a existing Azure VM using a powershell/bash script deployed through a custom script extension
 
 > Disclaimer: Only Windows VM works for now
 
