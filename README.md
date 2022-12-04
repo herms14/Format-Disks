@@ -21,3 +21,4 @@ module "format-disks"{
     rg_name = <resource_group>
     vm_name =["vm_name"]
 }
+```
