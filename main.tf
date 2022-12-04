@@ -6,7 +6,6 @@ data "azurerm_virtual_machine" "get-vm" {
 
 
 resource "azurerm_virtual_machine_extension" "format-disk" {
-  count                      = !contains(tolist([var.os]), "linux") ? length(var.vm_name) : 0
   name                       = "CustomScriptExtension-FormatDisk"
   virtual_machine_id         = data.azurerm_virtual_machine.get-vm[count.index].id
   publisher                  = "Microsoft.Compute"
