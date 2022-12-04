@@ -12,7 +12,3 @@ variable "vm_name" {
 
 }
 
-variable "os" {
-  description = "Operating system Windows or Linux"
-  type        = string
-}
